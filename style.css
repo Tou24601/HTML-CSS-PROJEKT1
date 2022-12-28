@@ -1,0 +1,75 @@
+/*.container {
+    width: 960px;
+    margin: 0 auto;
+}*/
+.container nav {
+    position: fixed;
+    width: 1280px;
+    height: 50px;
+    background-color: #4E4E4E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+a:link {
+    text-decoration: none;
+}
+.container nav .leftNav .companyName {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.container nav #rightNav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.container nav #rightNav .rightNavElement {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #F1F1F1;
+}
+.container nav #rightNav #contact {
+    cursor: not-allowed;
+}
+#firstSection {
+    height: 100vh;
+    position: absolute;
+    width: 1280px;
+    background-color: #F1F1F1;
+    background-image: url(south-tyrol-ge76ca14d3_1280.jpg);
+}
+#firstSection #shadow {
+    height: calc(100vh - 50px);
+    position: absolute;
+    width: 1280px;
+    margin-top: 50px;
+    background-color: black;
+    opacity: 50%;
+}
+#firstSection h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+color: #FFFFFF;
+}
+/*#aboutPage {
+    position: absolute;
+    width: 1280px;
+    height: 100vh;
+    background-color: #F1F1F1;
+}*/
