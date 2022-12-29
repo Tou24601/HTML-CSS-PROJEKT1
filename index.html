@@ -9,33 +9,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="leftNav">
-                <a href="#firstSection" class="companyName">moja firma</a>
+    <nav>
+        <div class="container">
+            <div class="navigation">
+                <div class="leftNav">
+                    <a href="#firstSection" class="companyName robotoFont">moja firma</a>
+                </div>
+                <div class="rightNav">
+                    <a href="#aboutSection" class="rightNavElement robotoFont" id="about">o nas</a>
+                    <a href="#offerSection" class="rightNavElement robotoFont" id="offer">oferta</a>
+                    <a href="#" class="rightNavElement robotoFont" id="contact">kontakt</a>
+                </div>
             </div>
-            <div id="rightNav">
-                <a href="#aboutSection" class="rightNavElement" id="about">o nas</a>
-                <a href="#offerSection" class="rightNavElement" id="offer">oferta</a>
-                <a href="#" class="rightNavElement" id="contact">kontakt</a>
-            </div>
-        </nav>
+        </div>
+    </nav>
+    <main>
         <section id="firstSection">
-            <div id="shadow"></div>
-            <div id="hContainer">
-                <div id="h1"><h1>Nasza firma oferuje najwyższej jakości produkty</h1></div>
-                <div id="h2"><h2>Nie wierz nam na słowo – sprawdź</h2></div>
-                <button><a href="#offerSection">oferta</a></button>
+            <div class="shadow"></div>
+            <div class="container">
+                <div class="hContainer">
+                    <div class="mainTop robotoFont"><h1>Nasza firma oferuje najwyższej jakości produkty</h1></div>
+                    <div class="slogan robotoFont"><h2>Nie wierz nam na słowo – sprawdź</h2></div>
+                    <a href="#offerSection" type="button" class="linkButton robotoFont">oferta</a>
+                </div>
             </div>
         </section>
         <section id="aboutSection">
-
+            <div class="container">
+                <h3>Nasi specjaliści</h3>
+                <div class="specialist">
+                    <h4>Elżbieta Dzika (PR)</h4>
+                    <div class="photo" id="eDzik"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ea enim, natus illo ad necessitatibus fuga omnis fugit possimus! Eius repudiandae labore ut tenetur necessitatibus cum sunt quis sapiente totam.</p>
+                </div>
+                <div class="specialist">
+                    <h4>Zofia Samofia (PR)</h4>
+                    <div class="photo" id="zSamofia"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ea enim, natus illo ad necessitatibus fuga omnis fugit possimus! Eius repudiandae labore ut tenetur necessitatibus cum sunt quis sapiente totam.</p>
+                </div>
+            </div>
         </section>
-        <footer>
+    </main>
+    <footer>
+        <div class="container">
             <div id="footerText">Nazwa firmy - wszelkie prawa zastrzeżone</div>
             <a href=""><img src="" alt="" /></a>
             <a href=""><img src="" alt="" /></a>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
 </html>

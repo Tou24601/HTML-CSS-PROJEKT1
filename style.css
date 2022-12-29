@@ -2,15 +2,27 @@
     width: 960px;
     margin: 0 auto;
 }
-.container nav {
+.robotoFont {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #F1F1F1;
+}
+ nav {
     position: fixed;
     top: 0;
-    width: 1280px;
+    width: 100%;
     height: 50px;
     background-color: #4E4E4E;
+    color: #FFFFFF;
+ }
+ .navigation {
+    width: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 5;
 }
@@ -20,98 +32,106 @@ a:link {
 a:visited {
     color: #F1F1F1;
 }
-.container nav .leftNav .companyName {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+nav .leftNav .companyName {
     display: flex;
     align-items: center;
-    color: #FFFFFF;
 }
-.container nav #rightNav {
+nav .rightNav {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
-.container nav #rightNav .rightNavElement {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+nav .rightNav .rightNavElement {
     display: flex;
     align-items: center;
-    color: #F1F1F1;
 }
-.container nav #rightNav #contact {
+nav .rightNav #contact {
     cursor: not-allowed;
 }
 #firstSection {
     height: 100vh;
-    position: absolute;
-    width: 1280px;
+    width: 100vw;
     background-color: #F1F1F1;
     background-image: url(south-tyrol-ge76ca14d3_1280.jpg);
+    background-size: cover;
 }
-#firstSection #shadow {
-    height: calc(100vh - 50px);
-    position: absolute;
-    width: 1280px;
-    margin-top: 50px;
+.shadow {
+    height: 100vh;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
-#hContainer {
+#firstSection .container .hContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 33vh;
     margin-left: 30px;
     gap: 50px;
     justify-content: space-between;
 }
-#firstSection #h1 {
+#firstSection .mainTop {
     z-index: 1;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
     color: #FFFFFF;
 }
-#firstSection #h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+#firstSection .slogan {
     font-size: 18px;
-    line-height: 21px;
     color: #FFFFFF;
     z-index: 1;
 }
-button {
-    width: 164px; height: 40.74px;
+.linkButton {
+    width: 164px; 
+    height: 40.74px;
     border: 3px solid #FFFFFF;
     background-color: transparent;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: #FFFFFF;
     z-index: 1;
 }
-button:hover {
+.linkButton:hover {
     background-color: #FFFFFF;
     color: black;
 }
-/*#aboutSection {
-    position: absolute;
-    width: 1280px;
-    height: 100vh;
+#aboutSection {
+    width: 100vw;
     background-color: #F1F1F1;
-}*/
+    z-index: 1;
+}
+.specialist {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+color: #000000;
+}
+.specialist h4 {
+    font-weight: bold;
+}
+.photo {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-size: cover;
+}
+.specialist {
+    z-index: 1;
+    display: flex;
+}
+.specialist:nth-of-type(odd) {
+    left:30px;
+}
+.specialist:nth-of-type(even) {
+    right: 30px;
+}
+#eDzik {
+    background-image: url(pexels-andrea-piacquadio-3769021.jpg);
+}
+#zSamofia {
+    background-image: url(pexels-edmond-dantès-4347368.jpg);
+}
 footer {
-    width: 1280px;
+    width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
     display: flex;
@@ -119,4 +139,11 @@ footer {
     justify-content: space-around;
     align-items: center;
     z-index: 5;
+}
+#footerText {
+    font-family: 'Roboto'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 18px;
+    color: #FFFFFF;
 }
