@@ -1,17 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 960px;
     margin: 0 auto;
 }
-.robotoFont {
+body {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     color: #F1F1F1;
 }
  nav {
-    position: fixed;
-    top: 0;
+
     width: 100%;
     height: 50px;
     background-color: #4E4E4E;
@@ -49,7 +51,7 @@ nav .rightNav #contact {
     cursor: not-allowed;
 }
 #firstSection {
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100vw;
     background-color: #F1F1F1;
     background-image: url(south-tyrol-ge76ca14d3_1280.jpg);
@@ -61,12 +63,13 @@ nav .rightNav #contact {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
-#firstSection .container .hContainer {
+.hContainer {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
     gap: 50px;
     justify-content: space-between;
+    z-index: 1;
 }
 #firstSection .mainTop {
     z-index: 1;
@@ -76,16 +79,16 @@ nav .rightNav #contact {
 #firstSection .slogan {
     font-size: 18px;
     color: #FFFFFF;
-    z-index: 1;
 }
 .linkButton {
     width: 164px; 
-    height: 40.74px;
+    /*height: 40.74px;*/
+    padding: 10px;
+    line-height: 20px;
     border: 3px solid #FFFFFF;
     background-color: transparent;
     text-align: center;
     color: #FFFFFF;
-    z-index: 1;
 }
 .linkButton:hover {
     background-color: #FFFFFF;
@@ -95,40 +98,89 @@ nav .rightNav #contact {
     width: 100vw;
     background-color: #F1F1F1;
     z-index: 1;
+    padding-top: 51px;
+}
+.specialistTop {
+    font-size: 36px;
+    color: #152D41;
+    margin-bottom: 113px;
+    font-weight: 700;
 }
 .specialist {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-
-color: #000000;
+    color: #000000;
 }
-.specialist h4 {
-    font-weight: bold;
+.specialistText {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.specialist .specialistText .specialistName {
+    font-weight: 700;
 }
 .photo {
-    width: 10vw;
-    height: 10vw;
+    width: 197px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-size: cover;
+    background-position: center;
 }
 .specialist {
     z-index: 1;
-    display: flex;
 }
 .specialist:nth-of-type(odd) {
-    left:30px;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    padding-bottom: 104px;
 }
 .specialist:nth-of-type(even) {
-    right: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 44px;
+    padding-bottom: 104px;
 }
-#eDzik {
+#specialistFirst {
     background-image: url(pexels-andrea-piacquadio-3769021.jpg);
 }
-#zSamofia {
+#specialistSecond {
     background-image: url(pexels-edmond-dantès-4347368.jpg);
+}
+#offerSection {
+    background-color: #405D78;
+}
+.offerTop {
+    font-size: 36px;
+}
+.serviceBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 63px;
+}
+.service {
+    width: 198px;
+    height: 193.78px;
+    background-color: #F1F1F1;
+    color: #000000;
+    text-align: center;
+}
+.service:hover {
+    transform: scale(1.05);
+    transition-duration: 2s;
+}
+.serviceName {
+    font-size: 24px;
+}
+.firstService::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    aspect-ratio: 1 / 1;
+    background-color: #E07A64;
+    z-index: 5;
 }
 footer {
     width: 100vw;
