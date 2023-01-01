@@ -13,14 +13,12 @@ body {
     color: #F1F1F1;
 }
  nav {
-
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
     color: #FFFFFF;
  }
  .navigation {
-    width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -64,9 +62,9 @@ nav .rightNav #contact {
     z-index: 0;
 }
 .hContainer {
+    padding: 220px 0px 220px 0px;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
     gap: 50px;
     justify-content: space-between;
     z-index: 1;
@@ -82,7 +80,6 @@ nav .rightNav #contact {
 }
 .linkButton {
     width: 164px; 
-    /*height: 40.74px;*/
     padding: 10px;
     line-height: 20px;
     border: 3px solid #FFFFFF;
@@ -93,21 +90,23 @@ nav .rightNav #contact {
 .linkButton:hover {
     background-color: #FFFFFF;
     color: black;
+    transition-duration: 1s;
 }
 #aboutSection {
     width: 100vw;
     background-color: #F1F1F1;
     z-index: 1;
-    padding-top: 51px;
 }
 .specialistTop {
     font-size: 36px;
     color: #152D41;
-    margin-bottom: 113px;
+    padding-top: 113px;
+    padding-bottom: 113px;
     font-weight: 700;
 }
 .specialist {
     color: #000000;
+    padding-bottom: 113px;
 }
 .specialistText {
     width: 50vw;
@@ -132,13 +131,11 @@ nav .rightNav #contact {
     display: flex;
     flex-direction: row;
     gap: 44px;
-    padding-bottom: 104px;
 }
 .specialist:nth-of-type(even) {
     display: flex;
     flex-direction: row-reverse;
     gap: 44px;
-    padding-bottom: 104px;
 }
 #specialistFirst {
     background-image: url(pexels-andrea-piacquadio-3769021.jpg);
@@ -147,27 +144,37 @@ nav .rightNav #contact {
     background-image: url(pexels-edmond-dantès-4347368.jpg);
 }
 #offerSection {
+    width: 100vw;
     background-color: #405D78;
+}
+.offerAll {
+    padding-top: 113px;
+    padding-bottom: 113px;
 }
 .offerTop {
     font-size: 36px;
+    padding-bottom: 113px;
 }
 .serviceBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 63px;
+    justify-content: center;
 }
 .service {
     width: 198px;
     height: 193.78px;
     background-color: #F1F1F1;
     color: #000000;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .service:hover {
     transform: scale(1.05);
-    transition-duration: 2s;
+    transition-duration: 0.5s;
 }
 .serviceName {
     font-size: 24px;
@@ -175,7 +182,6 @@ nav .rightNav #contact {
 .firstService::before {
     content: "";
     display: block;
-    position: absolute;
     border-radius: 50%;
     width: 22px;
     aspect-ratio: 1 / 1;
@@ -186,11 +192,14 @@ footer {
     width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
+    z-index: 5;
+}
+.footer {
+    height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    z-index: 5;
 }
 #footerText {
     font-family: 'Roboto'; 
@@ -198,4 +207,9 @@ footer {
     font-weight: 700; 
     font-size: 18px;
     color: #FFFFFF;
+}
+svg {
+    width: 31px;
+    fill: #FFFFFF;
+    padding-left: 10px;
 }
