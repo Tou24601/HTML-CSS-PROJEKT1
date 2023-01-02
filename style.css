@@ -39,7 +39,6 @@ nav .container .rightNav {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    color: #F1F1F1;
 }
 nav .container .rightNav #contact {
     cursor: not-allowed;
@@ -169,9 +168,6 @@ nav .container .rightNav #contact {
 #offerSection .container .serviceBox .service .serviceName {
     font-size: 24px;
 }
-/*#offerSection .container .serviceBox .firstService {
-    position: relative;
-}*/
 #offerSection .container .serviceBox .firstService::before {
     content: "";
     position: absolute;
