@@ -27,6 +27,7 @@ body {
 }
 a:link {
     text-decoration: none;
+    color: #F1F1F1;
 }
 a:visited {
     color: #F1F1F1;
@@ -159,6 +160,7 @@ nav .container .rightNav #contact {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 #offerSection .container .serviceBox .service:hover {
     transform: scale(1.05);
@@ -167,10 +169,14 @@ nav .container .rightNav #contact {
 #offerSection .container .serviceBox .service .serviceName {
     font-size: 24px;
 }
-.firstService::before {
+/*#offerSection .container .serviceBox .firstService {
+    position: relative;
+}*/
+#offerSection .container .serviceBox .firstService::before {
     content: "";
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: -10px;
+    left: -10px;
     border-radius: 50%;
     width: 22px;
     aspect-ratio: 1 / 1;
