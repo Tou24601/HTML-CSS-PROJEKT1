@@ -10,21 +10,20 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: #F1F1F1;
+    color: #FFFFFF;
 }
  nav {
     width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
-    color: #FFFFFF;
  }
- .navigation {
+ nav .container .navigation {
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 1;
 }
 a:link {
     text-decoration: none;
@@ -32,20 +31,16 @@ a:link {
 a:visited {
     color: #F1F1F1;
 }
-nav .leftNav .companyName {
-    display: flex;
-    align-items: center;
+nav .container .leftNav {
+    font-weight: 700; 
 }
-nav .rightNav {
+nav .container .rightNav {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    color: #F1F1F1;
 }
-nav .rightNav .rightNavElement {
-    display: flex;
-    align-items: center;
-}
-nav .rightNav #contact {
+nav .container .rightNav #contact {
     cursor: not-allowed;
 }
 #firstSection {
@@ -55,13 +50,13 @@ nav .rightNav #contact {
     background-image: url(south-tyrol-ge76ca14d3_1280.jpg);
     background-size: cover;
 }
-.shadow {
-    height: 100vh;
+#firstSection .shadow {
+    height: calc(100vh - 50px);
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
-.hContainer {
+#firstSection .container .hContainer {
     padding: 220px 0px 220px 0px;
     display: flex;
     flex-direction: column;
@@ -69,25 +64,21 @@ nav .rightNav #contact {
     justify-content: space-between;
     z-index: 1;
 }
-#firstSection .mainTop {
+#firstSection .container .mainTop {
+    width: 577px;
     z-index: 1;
     font-size: 36px;
-    color: #FFFFFF;
+    font-weight: 700;
 }
-#firstSection .slogan {
-    font-size: 18px;
-    color: #FFFFFF;
-}
-.linkButton {
+#firstSection .container .linkButton {
     width: 164px; 
     padding: 10px;
     line-height: 20px;
     border: 3px solid #FFFFFF;
     background-color: transparent;
     text-align: center;
-    color: #FFFFFF;
 }
-.linkButton:hover {
+#firstSection .container .linkButton:hover {
     background-color: #FFFFFF;
     color: black;
     transition-duration: 1s;
@@ -97,72 +88,69 @@ nav .rightNav #contact {
     background-color: #F1F1F1;
     z-index: 1;
 }
-.specialistTop {
+#aboutSection .container .specialistTop {
     font-size: 36px;
     color: #152D41;
-    padding-top: 113px;
-    padding-bottom: 113px;
+    padding: 104px 0px;
     font-weight: 700;
 }
-.specialist {
+#aboutSection .container .specialist {
     color: #000000;
-    padding-bottom: 113px;
+    padding-bottom: 104px;
 }
-.specialistText {
+#aboutSection .container .specialist .specialistText {
     width: 50vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.specialist .specialistText .specialistName {
+#aboutSection .container .specialist .specialistText .specialistName {
     font-weight: 700;
 }
-.photo {
+#aboutSection .container .specialist .photo {
     width: 197px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
 }
-.specialist {
-    z-index: 1;
-}
-.specialist:nth-of-type(odd) {
+#aboutSection .container .specialist:nth-of-type(odd) {
     display: flex;
     flex-direction: row;
     gap: 44px;
 }
-.specialist:nth-of-type(even) {
+#aboutSection .container .specialist:nth-of-type(even) {
     display: flex;
     flex-direction: row-reverse;
     gap: 44px;
 }
-#specialistFirst {
+#aboutSection .container #specialistFirst {
     background-image: url(pexels-andrea-piacquadio-3769021.jpg);
 }
-#specialistSecond {
+#aboutSection .container #specialistSecond {
     background-image: url(pexels-edmond-dantès-4347368.jpg);
 }
 #offerSection {
     width: 100vw;
     background-color: #405D78;
 }
-.offerAll {
-    padding-top: 113px;
-    padding-bottom: 113px;
+#offerSection .container .offerAll {
+    padding-top: 104px;
+    padding-bottom: 104px;
 }
-.offerTop {
+#offerSection .container .offerTop {
     font-size: 36px;
-    padding-bottom: 113px;
+    padding-bottom: 104px;
+    font-weight: 700;
 }
-.serviceBox {
+#offerSection .container .serviceBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 63px;
     justify-content: center;
 }
-.service {
+#offerSection .container .serviceBox .service {
     width: 198px;
     height: 193.78px;
     background-color: #F1F1F1;
@@ -172,16 +160,17 @@ nav .rightNav #contact {
     justify-content: center;
     align-items: center;
 }
-.service:hover {
+#offerSection .container .serviceBox .service:hover {
     transform: scale(1.05);
     transition-duration: 0.5s;
 }
-.serviceName {
+#offerSection .container .serviceBox .service .serviceName {
     font-size: 24px;
 }
 .firstService::before {
     content: "";
-    display: block;
+    top: 0;
+    left: 0;
     border-radius: 50%;
     width: 22px;
     aspect-ratio: 1 / 1;
@@ -202,11 +191,7 @@ footer {
     align-items: center;
 }
 #footerText {
-    font-family: 'Roboto'; 
-    font-style: normal; 
     font-weight: 700; 
-    font-size: 18px;
-    color: #FFFFFF;
 }
 svg {
     width: 31px;
