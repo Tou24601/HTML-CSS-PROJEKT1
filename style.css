@@ -6,7 +6,7 @@ html {
     margin: 0 auto;
 }
 body {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -17,13 +17,12 @@ body {
     height: 50px;
     background-color: #4E4E4E;
  }
- nav .container .navigation {
+ nav .container {
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
 }
 a:link {
     text-decoration: none;
@@ -36,9 +35,11 @@ nav .container .leftNav {
     font-weight: 700; 
 }
 nav .container .rightNav {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+    list-style-type: none;
+}
+nav .container .rightNav li {
+    display: inline;
+    margin-left: 20px;
 }
 nav .container .rightNav #contact {
     cursor: not-allowed;
@@ -54,19 +55,16 @@ nav .container .rightNav #contact {
     height: calc(100vh - 50px);
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
 }
-#firstSection .container .hContainer {
-    padding: 220px 0px 220px 0px;
+#firstSection .container {
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     gap: 50px;
-    justify-content: space-between;
-    z-index: 1;
+    justify-content: center;
 }
 #firstSection .container .mainTop {
     width: 577px;
-    z-index: 1;
     font-size: 36px;
     font-weight: 700;
 }
@@ -77,16 +75,15 @@ nav .container .rightNav #contact {
     border: 3px solid #FFFFFF;
     background-color: transparent;
     text-align: center;
+    transition-duration: 1s;
 }
 #firstSection .container .linkButton:hover {
     background-color: #FFFFFF;
     color: black;
-    transition-duration: 1s;
 }
 #aboutSection {
     width: 100vw;
     background-color: #F1F1F1;
-    z-index: 1;
 }
 #aboutSection .container .specialistTop {
     font-size: 36px;
@@ -109,7 +106,7 @@ nav .container .rightNav #contact {
 }
 #aboutSection .container .specialist .photo {
     width: 197px;
-    aspect-ratio: 1 / 1;
+    height: 197px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -120,6 +117,7 @@ nav .container .rightNav #contact {
     gap: 44px;
 }
 #aboutSection .container .specialist:nth-of-type(even) {
+    text-align: right;
     display: flex;
     flex-direction: row-reverse;
     gap: 44px;
@@ -134,9 +132,8 @@ nav .container .rightNav #contact {
     width: 100vw;
     background-color: #405D78;
 }
-#offerSection .container .offerAll {
-    padding-top: 104px;
-    padding-bottom: 104px;
+#offerSection .container {
+    padding: 104px 0px;
 }
 #offerSection .container .offerTop {
     font-size: 36px;
@@ -155,15 +152,16 @@ nav .container .rightNav #contact {
     height: 193.78px;
     background-color: #F1F1F1;
     color: #000000;
+    box-shadow: 0px 15px 10px -15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    transition-duration: 0.5s;
 }
 #offerSection .container .serviceBox .service:hover {
     transform: scale(1.05);
-    transition-duration: 0.5s;
 }
 #offerSection .container .serviceBox .service .serviceName {
     font-size: 24px;
@@ -177,15 +175,13 @@ nav .container .rightNav #contact {
     width: 22px;
     aspect-ratio: 1 / 1;
     background-color: #E07A64;
-    z-index: 5;
 }
 footer {
     width: 100vw;
     height: 50px;
     background-color: #4E4E4E;
-    z-index: 5;
 }
-.footer {
+footer .container {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -198,5 +194,6 @@ footer {
 svg {
     width: 31px;
     fill: #FFFFFF;
-    padding-left: 10px;
+    margin-left: 10px;
+    cursor: not-allowed;
 }
