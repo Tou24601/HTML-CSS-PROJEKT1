@@ -6,9 +6,7 @@ html {
     margin: 0 auto;
 }
 body {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -17,7 +15,7 @@ body {
     height: 50px;
     background-color: #4E4E4E;
  }
- nav .container {
+ nav .nav {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -56,7 +54,7 @@ nav .container .rightNav #contact {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#firstSection .container {
+#firstSection .firstSectionElements {
     height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
@@ -106,7 +104,7 @@ nav .container .rightNav #contact {
 }
 #aboutSection .container .specialist .photo {
     width: 197px;
-    height: 197px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -132,7 +130,7 @@ nav .container .rightNav #contact {
     width: 100vw;
     background-color: #405D78;
 }
-#offerSection .container {
+#offerSection .offerSectionElements {
     padding: 104px 0px;
 }
 #offerSection .container .offerTop {
@@ -181,7 +179,7 @@ footer {
     height: 50px;
     background-color: #4E4E4E;
 }
-footer .container {
+footer .footer {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -191,9 +189,8 @@ footer .container {
 #footerText {
     font-weight: 700; 
 }
-svg {
-    width: 31px;
-    fill: #FFFFFF;
-    margin-left: 10px;
-    cursor: not-allowed;
+i {
+    font-size: 31px;
+    color: #FFFFFF;
+    margin-left: 18px;
 }
